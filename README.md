@@ -1,10 +1,10 @@
 # Hi, I'm Bintang 👋
-Sedang belajar C++ dan Python. Berbasis di South Tangerang.
+Currently learning C++ and Python. Based in South Tangerang.
 
-## Sedang saya pelajari
-- C++ (OOP, struktur data)
+## Currently learning
+- C++ (OOP, data structures)
 - Python
 - Java (OOP)
 
-## Kontak
+## Contact
 - LinkedIn: linkedin.com/in/bintang-arya-pradipta-36048b2a3
