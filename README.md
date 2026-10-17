@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/after-hours.gif" width="100%" alt="Bintang's After Hours — a pixel jazz session. Code, curiosity and a little improvisation." />
+  <img src="after-hours.gif" width="100%" alt="Bintang's After Hours — a pixel jazz session. Code, curiosity and a little improvisation." />
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
 <table>
 <tr>
 <td width="33%" align="center" valign="middle">
-  <img src="assets/jazz-cover.jpeg" width="260" alt="Jazz artwork in deep blue, magenta and warm yellow, featuring two suited figures." />
+  <img src="jazz-cover.jpeg" width="260" alt="Jazz artwork in deep blue, magenta and warm yellow, featuring two suited figures." />
   <br /><sub>THE AFTER HOURS COLLECTION · VOL. 01</sub>
 </td>
 <td width="67%" valign="top">
@@ -43,7 +43,7 @@ bintang@after-hours:~$ whoami
 
 ## Side A · The code
 
-<img src="assets/learning.svg" width="510" alt="Currently learning: C++, Python and Java" />
+<img src="learning.svg" width="510" alt="Currently learning: C++, Python and Java" />
 
 These are the languages I'm learning and practicing—not a list of things I've mastered.
 
@@ -88,5 +88,5 @@ Happy to connect over **embedded systems, learning to code, business, or export 
 <br />
 
 <p align="center">
-  <img src="assets/end-of-side.svg" width="100%" alt="End of side A. Still learning. Still building. Flip the record and keep going." />
+  <img src="end-of-side.svg" width="100%" alt="End of side A. Still learning. Still building. Flip the record and keep going." />
 </p>
