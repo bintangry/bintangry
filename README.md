@@ -20,13 +20,14 @@
 
 ### Hey, I'm Bintang.
 
-Computer Engineering student based in South Tangerang, Indonesia. I'm learning to turn ideas into things that work—through code, electronics, and business.
+Computer Engineering student based in South Tangerang, Indonesia. I'm working toward becoming an **IoT & Embedded Systems Engineer**, learning to connect software, electronics, and real-world devices.
 
 ```text
 bintang@after-hours:~$ whoami
 
   learning   C++ / Python / Java
-  direction  IoT & embedded systems
+  career     IoT & Embedded Systems Engineer
+  stage      aspiring / building the foundations
   business   Vlora Nusantara
   exploring  exports & entrepreneurship
   location   Indonesia · UTC+7
@@ -43,9 +44,11 @@ bintang@after-hours:~$ whoami
 
 ## Side A · The code
 
-<img src="learning.svg" width="510" alt="Currently learning: C++, Python and Java" />
+<img src="tech-stack.svg" width="720" alt="Learning C++, Python and Java; exploring Arduino and embedded systems; coding with VS Code." />
 
-These are the languages I'm learning and practicing—not a list of things I've mastered.
+**Learning:** C++, Python, and Java. **Exploring:** Arduino and embedded systems. **Editor:** VS Code.
+
+My career goal is to become an **IoT & Embedded Systems Engineer**. I'm building my foundations in programming, microcontrollers, and hardware–software integration.
 
 | Track | What I'm working on |
 | :--- | :--- |
@@ -90,3 +93,15 @@ Happy to connect over **embedded systems, learning to code, business, or export 
 <p align="center">
   <img src="end-of-side.svg" width="100%" alt="End of side A. Still learning. Still building. Flip the record and keep going." />
 </p>
+
+<br />
+
+## The midnight arcade
+
+My contribution history, with a little jazz-club energy.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/bintangry/bintangry/output/pacman-jazz.svg" width="100%" alt="Pac-Man animation of Bintang's GitHub contributions in a navy, magenta and gold palette." />
+</p>
+
+<p align="center"><sub>Refreshed daily with GitHub Actions · Built with <a href="https://github.com/abozanona/pacman-contribution-graph">pacman-contribution-graph</a></sub></p>
