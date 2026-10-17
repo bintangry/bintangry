@@ -1,0 +1,66 @@
+name: Jazz Pac-Man
+
+on:
+  schedule:
+    - cron: '17 0 * * *' # About 07:17 WIB daily; GitHub can delay scheduled runs.
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/pacman.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: jazz-pacman
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Generate Pac-Man from real GitHub contributions
+        uses: abozanona/pacman-contribution-graph@7332e1de7903ab780c3692a4127a59cc13872daa
+        with:
+          github_user_name: bintangry
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          games: pacman
+
+      - name: Apply the After Hours jazz palette
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          import xml.etree.ElementTree as ET
+
+          source = Path('dist/pacman-contribution-graph-dark.svg')
+          svg = source.read_text()
+          palette = {
+              '#0d1117': '#0d1022',
+              '#161b22': '#191d35',
+              '#0e4429': '#373050',
+              '#006d32': '#775184',
+              '#26a641': '#cf70ae',
+              '#39d353': '#f6df9b',
+              '#8b949e': '#a9aec9',
+              '#ffffff': '#92a9ef',
+          }
+          svg = re.sub(r'#[0-9a-fA-F]{6}(?![0-9a-fA-F])',
+                       lambda m: palette.get(m.group(0).lower(), m.group(0)), svg)
+          svg = svg.replace('fill="yellow"', 'fill="#f6df9b"')
+          ET.fromstring(svg)
+          assert '<svg' in svg and 'id="pacman"' in svg
+          Path('dist/pacman-jazz.svg').write_text(svg)
+          print('Jazz palette applied; animated SVG validated.')
+          PY
+
+      - name: Publish generated SVGs to the output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
